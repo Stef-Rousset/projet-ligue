@@ -1,0 +1,294 @@
+/*fonts and colors*/
+h1 {
+	font-family: 'Open Sans', sans-serif ;
+	color: white;
+  	text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  	font-size: 30px;
+}
+h2 {
+	font-family: 'Open Sans', sans-serif ;
+	color: white;
+  	text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  	font-size: 20px;
+}
+.btn-group button {
+  color: white;
+}
+.btn-group a {
+  font-size: 15px;
+}
+.card button {
+  color: white;
+}
+.card-body {
+  color: white;
+}
+#btn {
+  color:white;
+}
+.card-body a {
+  font-size: 15px;
+}
+.card-body h3 {
+  color: white;
+  font-size: 25px;
+}
+footer h3 {
+  color: white;
+  font-size: 25px;
+}
+.piedpage h4,p,a {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+
+
+/*design*/
+body {
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/fleuret_0.6.png); 
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#go {
+  background: #2F4858;
+}
+img {
+  width: 125px;
+  height: 125px;
+}
+#btn {
+  width: 200px;
+  border: 0px;
+  margin-left: 30px;
+}
+#bouton {
+  width: 200px;
+  border: 0px;
+  margin-left: 30px;
+}
+.form-inline {
+  margin-left: 30px;
+}
+main {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ margin-top: 100px;
+}
+.card {
+  background-color: #2F4858;
+  width: 1000px;
+}
+.accordion {
+  text-align: left;
+}
+.card button {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.card button:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+}
+.card-body a {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.card-body a:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+}
+#commissions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.commission1 {
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: left;
+}
+.commission2 {
+  margin-top: 15px;
+  margin-left: 40px;
+  text-align: left;
+}
+.commission3 {
+  margin-top: 15px;
+  margin-left: 80px;
+  text-align: left;
+}
+footer {
+  background-color: #344055;
+  opacity: 0.7;
+  height: auto;
+  margin-top: 100px;
+  padding: 20px 50px;
+}
+footer h3 {
+  text-align: center;
+}
+.piedpage {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.piedpage a {
+	opacity: 0.7;
+}
+.piedpage a:hover {
+	text-decoration: none;
+	opacity: 1;
+}
+.colonne1 {
+	margin-top: 15px;
+  margin-bottom: 15px;
+	margin-left: 100px;
+	text-align: left;
+}
+.colonne2 {
+	margin-top: 15px;
+	margin-left: 200px;
+	text-align: left;
+}
+.colonne3 {
+	margin-top: 15px;
+	margin-left: 200px;
+	text-align: left;
+}
+.image1 {
+  width: 40px;
+  height: 40px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.image2 {
+  width: 120px;
+  height: 120px;
+  margin-top: 0px;
+}
+
+/*Responsive  écrans de tablettes paysage et desktop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+* {
+  box-sizing: border-box;
+  }
+  body {
+    width: auto;    /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+    margin: 0;
+    padding: 0;
+    font-size: 110%; /* texte un peu plus gros et lisible*/
+    word-wrap: break-word; /* force le retour à la ligne si mot trop long*/
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .colonne1 {
+    margin-left: 50px;
+  }
+  .colonne2 , .colonne3 {
+    margin-left: 50px;
+  }
+}
+
+/*Responsive  écrans de tablettes portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+* {
+  box-sizing: border-box;
+  }
+  body {
+    width: auto;    /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+    margin: 0;
+    padding: 0;
+    font-size: 120%; /* texte un peu plus gros et lisible*/
+    word-wrap: break-word; /* force le retour à la ligne si mot trop long*/
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    max-width: 60%;   /* fixer une largeur maximale de 60% et une hauteur auto aux éléments problématiques*/
+    margin:  auto;
+    height: auto;
+  }
+  .colonne1 {
+    margin-left: 50px;
+  }
+  .colonne2 , .colonne3 {
+    margin-left: 50px;
+  }
+}
+
+/*Responsive ecrans de smartphones portrait et paysage*/
+@media (max-width: 767px) {
+* {
+  box-sizing: border-box;
+}
+  body {
+    width: auto;    /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+    margin: 0;
+    padding: 0;
+    font-size: 130%; /* texte un peu plus gros et lisible*/
+    word-wrap: break-word; /* force le retour à la ligne si mot trop long*/
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/epees.jpg);
+  }
+  nav {
+    flex-direction: column;
+  }
+  #bouton, #btn {
+    margin-left: 0px;
+  }
+  #go {
+    margin: auto;  
+  }
+  main {
+    flex-direction: column;
+  }
+  .card {
+    max-width: 40%;       /* fixer une largeur maximale de 40% et une hauteur auto aux éléments problématiques*/
+    margin:  auto;
+    height: auto;
+    text-align: center;
+  }
+  #commissions {
+    grid-template-columns: 1fr;   /* une seule colonne et 3 lignes */
+    grid-template-rows: repeat(3, auto); 
+  }
+  .commission1, .commission2, .commission3 {
+    margin-left: 0px;
+    text-align: center;
+  }
+  footer {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .piedpage {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);  /* une seule colonne et 3 lignes */
+  }
+  h4 {
+    text-align: center;
+  }
+  .colonne1, .colonne2, .colonne3 {
+    margin-left: 0px;
+  }
+  .image1, .image2 {
+    max-width: 100%;
+    height: auto;
+  } 
+  .piedpage a, .card-product a {
+    text-decoration: underline;
+  }
+}

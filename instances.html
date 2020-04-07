@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Ligue d'Escrime de l'Académie de Paris" content="Présentation de la Ligue d'escrime de l'Académie de Paris">
+		<!-- adaptation du viewport sur mobile -->
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ligue d'Escrime de l'Académie de Paris </title>
+		<!--Google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Bootstrap CSS-->
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		 <!--jQuery firts, then Popper.js, then Boodstrap JS-->
+	  	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	  <link href='style_instances.css' rel='stylesheet'>
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<nav>
+				<img src="images/logo_ligue.png" alt="logo de la ligue"/>
+				<div class="btn-group">	
+					<a class="btn btn-outline-danger" href="accueil.html" id="btn">Accueil</a>	
+				</div>
+				<div class="btn-group">	 
+					<button class="btn btn-outline-danger dropdown-toggle" type="button" id="bouton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    La Ligue
+					  </button>
+					  <div class="dropdown-menu">
+					    <a class="dropdown-item" href="instances.html">Les instances dirigeantes</a>
+					    <a class="dropdown-item" href="#">La règlementation</a>
+					    <a class="dropdown-item" href="#">Les comptes-rendus</a>
+					    <a class="dropdown-item" href="#">Les coordonnées</a>
+					  </div>
+				</div>
+				<div class="btn-group">	 
+					<button class="btn btn-outline-danger dropdown-toggle" type="button" id="bouton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Les compétitions
+					 </button>
+					 <div class="dropdown-menu">
+					    <a class="dropdown-item" href="calendriers.html">Les calendriers</a>
+					    <a class="dropdown-item" href="#">Les classements</a>
+					    <a class="dropdown-item" href="#">Les stages</a>
+					    <a class="dropdown-item" href="#">Les sélections aux Championnats de France</a>
+					 </div>
+				</div>
+				<div class="btn-group">	 
+					<button class="btn btn-outline-danger dropdown-toggle" type="button" id="bouton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Les formations
+					 </button>
+					 <div class="dropdown-menu">
+					    <a class="dropdown-item" href="diplomes_federaux.html">Les diplômes Fédéraux</a>
+					    <a class="dropdown-item" href="#">Les diplômes professionels</a>
+					    <a class="dropdown-item" href="#">L'arbitrage</a>
+					    <a class="dropdown-item" href="#">La formation continue</a>
+					 </div>
+				</div>
+				<form class="form-inline">
+			    <input class="form-control mr-sm-2" type="search" size="20" placeholder="Recherche" aria-label="Search">
+			    <button class="btn btn-secondary my-2 my-sm-0" id="go" type="submit">Go</button>
+		  	</form>
+			</nav>
+		</header>
+		<!-- main -->
+		<main>
+			<h1>Les Instances dirigeantes</h1><br>
+				<div class="accordion" id="accordionExample">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Le Bureau
+				        </button>
+				      </h2>
+				    </div>
+
+				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+				      <div class="card-body">
+				        <ul>
+				        	<li>Présidente : <a href="mailto:laurence.2dd@gmail.com">Mme Laurence Duval-Destin</a></li>
+							<li>Vice-Président : <a href="mailto:stephane.rondin@wanadoo.fr">Mr Stéphane Rondin</a>
+							<li>Vice-Président : <a href="olivier.bonin2@numericable.fr">Maître Olivier Bonin</a>
+							</li>
+							<li>Secrétaire générale : <a href="elisabethescrimle.free.fr">Mme Élizabeth PetitJean</a></li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Le Comité Directeur
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				      <div class="card-body">
+				        <ul>
+				        	<li><a href="mailto:laurence.2dd@gmail.com">Mme Laurence Duval-Destin</a></li>
+							<li><a href="mailto:stephane.rondin@wanadoo.fr">Mr Stéphane Rondin</a></li>
+							<li><a href="olivier.bonin2@numericable.fr">Maître Olivier Bonin</a></li>
+							<li><a href="elisabethescrimle.free.fr">Mme Élizabeth PetitJean</a></li>
+							<li><a href="mailto:jeromewestholm@aol.com">Maître Jérôme Westholm</a></li>
+							<li><a href="mailto:gerard.brenna@orange.fr">Mr Gerard Brenna</a></li>
+							<li><a href="mailto:dcoutrot@free.fr">Mr Dominique Coutrot</a></li>
+							<li><a href="mailto:i.lamour@wanadoo.fr">Mme Isabelle lamour</a></li>
+							<li><a href="mailto:a.legouhy@free.fr">Maître Annie Legouhy </a></li>
+							<li><a href="mailto:vincent@escrime-ta.com">Maître Vincent Remy</a></li>
+							<li><a href="mailto:vivi.barclay@gmail.com">Mme Viviane Barclay</a></li>
+							<li><a href="mailto:michel.desnoux@sfr.fr">Mr Michel Desnoux</a></li>
+							<li><a href="mailto:Arnaud.Morlaes@bnpparibas.com">Mr Arnaud Morlaes</a></li>
+							<li><a href="mailto:strabon@club-internet.fr">Maître Stéphanie Rousset</a></li>
+							<li><a href="mailto:bruno.tura@wanadoo.fr">Mr Bruno Tura</a></li>
+							<li><a href="mailto:roger-fr.grosjean@wanadoo.fr">Mr Roger Grosjean</a></li>
+							<li><a href="mailto:paul.jalat@gmail.com">Mr Paul Jalat</a></li>
+							<br>
+							<li>Conseiller Technique et Sportif : <a href="wifab@sfr.fr">Maître Fabrice Wittmer</a></li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Les Commissions
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				      <div class="card-body" id="commissions">
+					    <div class="commission1">
+					        <h3>Fleuret :</h3>
+						        <ul>
+						        	<li><a href="mailto:vincent@escrime-ta.com">Maître Vincent Remy</a></li>
+						        	<li><a href="mailto:vincent@escrime-ta.com">Maître Odile Baroux</a></li>
+						        	<li><a href="mailto:contact@leap.fr">Maître Odile Baroux</a></li>
+						        	<li><a href="mailto:benoit.lorenz@etu.upmc.fr">Mr Benoit Lorentz</a></li>
+						        </ul>
+					        <br>
+					        <h3>Adultes Loisirs :</h3>
+						        <ul>
+						        	<li><a href="mailto:roger-fc.grosjean@wanadoo.fr">Mr Roger Grosjean</a></li>
+						        	<li><a href="mailto:dcoutrot@free.fr">Mr Dominique Coutrot</a></li>
+						        	<li><a href="#">Mme Carole Delorme</a></li>
+						        </ul>
+					        <br>
+					        <h3>Arbitrage :</h3>
+						        <ul>
+						        	<li><a href="mailto:vincent@escrime-ta.com">Maître Vincent Remy</a></li>
+						        	<li><a href="olivier.bonin2@numericable.fr">Maître Olivier Bonin</a></li>
+						        </ul>
+					        <br>
+					         <h3>Communication :</h3>
+					          <ul>
+					          	<li><a href="mailto:Arnaud.Morlaes@bnpparibas.com">Mr Arnaud Morlaes</a></li>
+					          	<li><a href="#">Mr Michel Dalsace</a></li>
+				          	</ul>
+				          <br>
+					         <h3>Récompenses :</h3>
+					          <ul>
+					          	<li><a href="mailto:michel.desnoux@sfr.fr">Mr Michel Desnoux</a></li>
+					          	<li><a href="#">Mr Michel Dalsace</a></li>
+				          	</ul>
+				        </div>
+				         <div class="commission2">
+				         	<h3>Épée :</h3>
+				         	<ul>
+					        	<li><a href="mailto:stephane.rondin@wanadoo.fr">Mr Stéphane Rondin</a></li>
+					        	<li><a href="mailto:bruno.tura@wanadoo.fr">Mr Bruno Tura</a></li>
+					        	<li><a href="mailto:a.legouhy@free.fr">Maître Annie Legouhy </a></li>
+					        	<li><a href="mailto:paul.jalat@gmail.com">Mr Paul Jalat</a></li>
+					        	<li><a href="mailto:strabon@club-internet.fr">Maître Stéphanie Rousset</a></li>
+					        	<li><a href="mailto:vivi.barclay@gmail.com">Mme Viviane Barclay</a></li>
+					        	<li><a href="mailto:florenceducarme@hotmail.com">Mme Florence Ducarme</a></li>
+					        </ul>
+					        <br>
+					        <h3>Artistique et de Spectacle :</h3>
+					        <ul>
+					        	<li><a href="mailto:roger-fc.grosjean@wanadoo.fr">Mr Roger Grosjean</a></li>
+					        	<li><a href="mailto:dcoutrot@free.fr">Mr Dominique Coutrot</a></li>
+					        	<li><a href="#">Mme Carole Delorme</a></li>
+					        </ul>
+					        <br>
+					         <h3>Sport d'Entreprise :</h3>
+					          <ul>
+					          	<li><a href="mailto:Arnaud.Morlaes@bnpparibas.com">Mr Arnaud Morlaes</a></li>
+				          	</ul>
+				          	<br>
+					         <h3>Promotion/Partenariats :</h3>
+					          <ul>
+					          	<li><a href="mailto:Arnaud.Morlaes@bnpparibas.com">Mr Arnaud Morlaes</a></li>
+					          	<li><a href="#">Mr Michel Dalsace</a></li>
+				          	</ul>
+				        </div>
+				         <div class="commission3">
+				          <h3>Sabre :</h3>
+				          <ul>
+				          	<li><a href="mailto:laurence.2dd@gmail.com">Mme Laurence Duval-Destin</a></li>
+				          	<li><a href="mailto:vertonludovic@gmail.com">Maître Ludovic Verton</a></li>
+				          	<li><a href="mailto:evepouteilnoble@gmail.com">Mme Eve Pouteil Noble</a></li>
+				          </ul>
+				          <br>
+				          <h3>Handisport :</h3>
+				          <ul>
+				          	<li><a href="mailto:jeromewestholm@aol.com">Maître Jérôme Westholm</a></li>
+				          </ul>
+				          </ul>
+				          <br>
+				          <h3>Discipline :</h3>
+				          <ul>
+				          	<li><a href="mailto:a.legouhy@free.fr">Maître Annie Legouhy </a></li>
+					        <li><a href="mailto:paul.jalat@gmail.com">Mr Paul Jalat</a></li>
+					        <li><a href="elisabethescrimle.free.fr">Mme Élizabeth PetitJean</a></li>
+				          </ul>
+				          <br>
+				          <h3>Discipline/Appel :</h3>
+				          <ul>
+				          	<li><a href="mailto:dcoutrot@free.fr">Mr Dominique Coutrot</a></li>
+					        <li><a href="mailto:Arnaud.Morlaes@bnpparibas.com">Mr Arnaud Morlaes</a></li>
+					        <li><a href="mailto:michel.desnoux@sfr.fr">Mr Michel Desnoux</a></li>
+				          </ul>
+
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+					<div class="card">
+						    <div class="card-header" id="headingFour">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						          Les Représentants
+						        </button>
+						      </h2>
+						    </div>
+
+						    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+						      <div class="card-body">
+						        <ul>
+						        	<li>Délégué CDOS : <a href="mailto:michel.desnoux@sfr.fr">Mr Michel Desnoux</a></li>
+									<li>Délégué FFSU : <a href="wifab@sfr.fr">Maître Fabrice Wittmer</a></li>
+									<li>FNSU : <a href="mailto:paul.jalat@gmail.com">Mr Paul Jalat</a></li>
+									<li>Jeunes : <a href="mailto:paul.jalat@gmail.com">Mr Paul Jalat</a></li>
+									<li>UNSS : <a href="wifab@sfr.fr">Maître Fabrice Wittmer</a></li>
+						        </ul>
+						      </div>
+						    </div>
+						  </div>
+			</div>
+		</main>
+		<!-- footer -->
+		<footer>
+			<h3>Ligue d'Escrime de l'Académie de Paris</h3>
+			<div class="piedpage">
+				<div class= "colonne1">
+					<h4>COORDONNÉES</h4>
+					<p>4 rue du Général Humbert 75014 Paris</br>
+					<a href="#">contact@leap.fr</a></br>
+					01.45.27.12.19</br>
+					<a href="#"><img src="images/facebook.png" class="image1" alt="logo facebook"></a>
+				    <a href="#"><img src="images/instagram-icon.png" class="image2" alt="logo instagram"></a>
+					</p>
+				</div>
+				<div class= "colonne2">
+					<h4>ACCÈS</h4>
+					<p>	Métro Porte de Vanves (M13)</br>
+						Tramway Porte de Vanves (T3)</br>
+					</p>
+				</div>
+				<div class= "colonne3">
+					<h4>OUVERTURE</h4>
+					<p> Mardi de 9h à 16h</br>
+						Jeudi de 10h à 16h</br>
+						Vendredi de 9h à 15h30</br>
+					</p>
+				</div>
+	  	  </div>
+		</footer>
+	</body>
+</html>

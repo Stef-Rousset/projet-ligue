@@ -1,0 +1,159 @@
+/*fonts and colors*/
+h1 {
+	font-family: 'Open Sans', sans-serif ;
+	color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 50px;
+  	
+}
+p {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 30px;
+  opacity: 0.8;
+  font-weight: lighter;
+}
+
+/*design*/
+body {
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/prime.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#logo {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	margin-top: 30px; 
+	margin-left: 20px;
+}
+main {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a {
+	text-align: left;
+}
+footer {
+  background-color: #344055;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.6;
+  height: auto;
+  margin-top: 300px;
+  margin-bottom: 0px;
+  padding: 0px 50px;
+}
+.image1 {
+  width: 40px;
+  height: 40px;
+}
+.image2 {
+  width: 120px;
+  height: 120px;
+}
+.footer-links a {
+  opacity: 0.7;
+  text-decoration: none;
+  padding: 0px 40px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer-contact p {
+  color: white;
+  font-size: 24px;
+  padding: 0px 40px;
+}
+.footer-contact a {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: 24px;
+}
+.footer-contact a:hover {
+  opacity: 1;
+ }
+
+
+/*Responsive  écrans de tablettes paysage et desktop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+* {
+  box-sizing: border-box;
+  }
+  body {
+    width: auto;    /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+    margin: 0;
+    padding: 0;
+    font-size: 110%; /* texte un peu plus gros et lisible*/
+    word-wrap: break-word; /* force le retour à la ligne si mot trop long*/
+  }
+  footer {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+/*Responsive  écrans de tablettes portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+* {
+  box-sizing: border-box;
+  }
+  body {
+    width: auto;    /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+    margin: 0;
+    padding: 0;
+    font-size: 120%; /* texte un peu plus gros et lisible*/
+    word-wrap: break-word; /* force le retour à la ligne si mot trop long*/
+  }
+  footer {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+ /*Responsive ecrans de smartphones portrait et paysage*/
+@media (max-width: 767px) {
+* {
+  box-sizing: border-box;
+}
+  body {
+    width: auto;    /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+    margin: 0;
+    padding: 0;
+    font-size: 130%; /* texte un peu plus gros et lisible*/
+    word-wrap: break-word; /* force le retour à la ligne si mot trop long*/
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/epees.jpg);
+  }
+  #bouton, #logo {
+  margin: auto;
+  }
+  main {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+  }
+  h1, p {
+    text-align: center;
+  }
+  footer {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .footer-contact p, .footer-links {
+    padding: 0px;
+    margin: auto;
+  }
+  .image1, .image2 {
+    max-width: 100%;
+    height: auto;
+  } 
+  .footer-contact a {
+    text-decoration: underline;
+  }
+}
